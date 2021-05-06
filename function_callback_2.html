@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수와 콜백(3/4) : 콜백</title>
+    <script>
+        function sortNumber(a,b){
+            return b-a;
+        }
+
+        var numbers = [20, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1];
+        console.log(numbers.sort());
+        // sort() 는 오리지널 함수
+        // [1, 10, 2, 20, 3, 4, 5, 6, 7, 8, 9]
+        alert(numbers.sort(sortNumber));
+        // 오리지널 함수의 동작 방법을 값을 줌으로써 바꾼다 (콜백)
+        // array, [20, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
