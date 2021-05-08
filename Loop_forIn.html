@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop forIn</title>
+    <script>
+        function dump_props(obj, obj_name){
+            var result = "",
+            for (var i in obj){
+                result += obj_name + "." + i + " = " + obj[i] + "<br>";
+            }
+            result += "<hr>";
+            return result;
+        }
+    </script>
+</head>
+<body>
+    <!--
+        for-in문은
+        객체의 열거 속성을 통해, 지정된 변수를 반복한다.
+
+        배열 요소를 반복하는 방법으로 이를 사용하도록 유도될 수 있지만
+        for-in 문은 숫자 인덱스에 추가하여 사용자 정의 속성의 이름을 반환한다.
+        따라서 만약 사용자 정의 속성 또는 메서드를 추가하는 등 array 객체를 수정하게 된다면,
+        배열 요소 이외에도 사용자 정의 속성을 통해 for-in문을 반복하기 때문에,
+        배열을 통해 반복할 때 숫자 인덱스와 전통적인 for 루프를 사용하는 것이 좋다.
+    -->
+</body>
+</html>
